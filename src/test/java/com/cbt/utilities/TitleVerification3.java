@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TitleVerification3 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         List<String> urls = Arrays.asList("https://luluandgeorgia.com",
                 "https://wayfair.com/",
@@ -31,7 +31,7 @@ public class TitleVerification3 {
                 System.out.println("title =" + driver.getTitle());
 
             }
-
+            Thread.sleep(3000);
             driver.quit();
 
 
